@@ -1,6 +1,19 @@
 ---
 const { value } = Astro.props;
 ---
-<div>
-  <p>This is an example Astro component passed the following value: {value}</p>
+
+<style>
+  .astroComponent {
+    border: 2px solid black;
+    background-color:rebeccapurple;
+    color: white;
+    padding: 1em;
+  }
+  b {
+    color: white;
+  }
+</style>
+
+<div class="astroComponent">
+  <p>This is an example Astro component passed the following value: <b>{value}</b></p>
 </div>
